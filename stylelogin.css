@@ -26,7 +26,7 @@ body {
 
 .card {
 
-    position: center;
+    margin: auto;
 
     background-color: rgba(19, 19, 19, 0.3);
 
