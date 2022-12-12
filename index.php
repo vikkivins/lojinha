@@ -3,8 +3,7 @@ session_start ();
 $nome = $_SESSION['usuario'];
 require_once 'cabecalho.php';
 ?>
-
-<div class="row">
+<div class="row justify-content-center" style = "margin-top: 15px;">
 <div class="col-sm-6">
     <div class="card mb-3" style="max-width: 800;">
     <div class="row g-0">
@@ -22,7 +21,7 @@ require_once 'cabecalho.php';
     </div>
 </div>
 </div>
-<div class="row">
+<div class="row justify-content-center">
 <div class="col-sm-6">
     <div class="card mb-3" style="max-width: 800;">
     <div class="row g-0">
@@ -41,7 +40,7 @@ require_once 'cabecalho.php';
 </div>
 </div>
 
-<div class="row">
+<div class="row justify-content-center">
 <div class="col-sm-6">
     <div class="card mb-3" style="max-width: 800;">
     <div class="row g-0">
@@ -59,7 +58,7 @@ require_once 'cabecalho.php';
     </div>
 </div>
 </div>
-<div class="row">
+<div class="row justify-content-center">
 <div class="col-sm-6">
     <div class="card mb-3" style="max-width: 800;">
     <div class="row g-0">
@@ -78,7 +77,7 @@ require_once 'cabecalho.php';
 </div>
 </div>
 
-<div class="row">
+<div class="row justify-content-center">
 <div class="col-sm-6">
     <div class="card mb-3" style="max-width: 800;">
     <div class="row g-0">
@@ -96,7 +95,7 @@ require_once 'cabecalho.php';
     </div>
 </div>
 </div>
-<div class="row">
+<div class="row justify-content-center">
 <div class="col-sm-6">
     <div class="card mb-3" style="max-width: 800;">
     <div class="row g-0">
