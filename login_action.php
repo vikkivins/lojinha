@@ -16,7 +16,7 @@
 
     if ($usuario == NULL || $senha == NULL || $usuario != $db_usuario || $senha != $db_senha) {
         echo "ACESSO NEGADO";
-        header("Location: a13_form.php"); //formulario login
+        header("Location: login.php"); //formulario login
     }else if ($usuario == $db_usuario && $senha == $db_senha){
         $_SESSION['usuario'] = $usuario;
         header("Location: produtos.php"); //index
