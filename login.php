@@ -19,7 +19,7 @@
                 </div>
                 <div class="inputBox">
                     <label for="nome"><b>Senha</b></label>
-                    <input type="text" name="txtsenha" id="txtsenha" class="inputUser" required>                    
+                    <input type="password" name="txtsenha" id="txtsenha" class="inputUser" required>                    
                 </div>
 
                 <button type="submit" name="btnlogin" class="btn" id="btnlogin">LOGIN</button>
