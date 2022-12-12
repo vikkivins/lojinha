@@ -1,5 +1,5 @@
 <?php
-    require_once 'connect.php';
+    require_once 'conexao.php';
 
     if(isset($_GET['btncadastrar'])){
         $email = filter_input(INPUT_GET,'txtemail');
@@ -22,7 +22,7 @@
         $sql->bindValue(':cpf', $cpf);
         $sql->bindValue(':end', $endereco);
         $sql->execute();
-        header('Location: confirm.php');
+        header('Location: index.php');
     }
     echo "$nome $sobrenome $data $fone, $cpf, $endereco";
 

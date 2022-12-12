@@ -4,12 +4,14 @@
  -->
 
 <?php
-    include_once 'connect.php'; // INCLUI O SCRIPT QUE CONECTA AO BANCO DE DADOS VIA PDO
+    include_once 'conexao.php'; // INCLUI O SCRIPT QUE CONECTA AO BANCO DE DADOS VIA PDO
 
     // PEGA AS CREDENCIAIS DE LOGIN DO USUÁRIO ATRAVÉS DO MÉTODO POST, PROVENITENTE DO FORMULÁRIO DE LOGIN
-    $usuario = $_POST['txtusuario']; 
-    $senha = $_POST['txtsenha'];
+    $usuario = $_GET['txtusuario']; 
+    $senha = $_GET['txtsenha'];
     $nome = "";
+
+    echo $usuario."<br>".$senha;
     
     // PEGA NA TABELA OS CAMPOS DE USUÁRIO E SENHA QUE BATEM COM O QUE FOI INSERIDO PELO USUÁRIO
     $sql = $conecta->query("select * from tab_clientes WHERE cli_email = '".$usuario."' and cli_senha = '".$senha."'");
@@ -24,7 +26,6 @@
       $db_usuario = $linha['cli_email']; // SALVA O EMAIL EM UMA VARIÁVEL
       $db_senha = $linha['cli_senha']; // SALVA A SENHA EM UMA VARIÁVEL
     }
-
     // SE O USUÁRIO OU SENHA FOREM NULOS, OU NÃO BATEREM COM AS INFORMAÇÕES DO BANCO DE DADOS;
     if ($usuario == NULL || $senha == NULL || $usuario != $db_usuario || $senha != $db_senha) {
         // MENSAGEM DE ERRO

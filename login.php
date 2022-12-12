@@ -29,7 +29,7 @@
             <div class="col-sm-6">
                 <div id="login">
 
-                    <form class="card">
+                    <form class="card" action="login_action.php">
 
                         <div class="cardinal">
                             <h2>Login</h2>
