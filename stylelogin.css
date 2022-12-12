@@ -7,6 +7,7 @@ body {
     position: absolute;
 
     background-image: url("img/fundo_glitter.png");
+    width: 100%;
 
 }
 
@@ -32,11 +33,9 @@ body {
 
     border-radius: 2px;
 
-    width:280px;
-
 }
 
-.card-header {
+.cardinal {
 
     padding-bottom: 50px;
 

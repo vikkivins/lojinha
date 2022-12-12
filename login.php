@@ -13,7 +13,7 @@
 <html lang="pt-br">
 
     <head>
-
+        <link rel="stylesheet" href="css/bootstrap.css">
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
@@ -21,42 +21,51 @@
         <title>Login</title>
 
     </head>
-
+   
     <body>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-sm-6">
+                <div id="login">
 
-    <img src="img/logo_png.png" align="right" width="50" height="50"></img>
+                    <form class="card">
 
-        <div id="login">
+                        <div class="cardinal">
+                            <h2>Login</h2>
+                        </div>
 
-            <form class="card">
+                        <div class="card-content">
 
-                <div class="card-header">
-                    <h2>Login</h2>
+                            <div class="card-content-area">
+                                <label for="usuario">Usuário</label>
+                                <input type="text" name="txtusuario" id="txtusuario" class="inputUser" required> 
+                            </div>
+
+                            <div class="card-content-area">
+                                <label for="password">Senha</label>
+                                <input type="password" name="txtsenha" id="txtsenha" class="inputUser" required>
+                            </div>
+                            
+                        </div>
+
+                        <div class="card-footer">
+                            <input type="submit" value="login" class="submit">
+                            <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+                        </div>
+
+                    </form>
+
+                </div>
+                </div>    
+                <div class="col-sm-6">
+                    <img src="img/logo_png.png" width="500" height="500" style="margin-top: 75px;"></img>
                 </div>
 
-                <div class="card-content">
 
-                    <div class="card-content-area">
-                        <label for="usuario">Usuário</label>
-                        <input type="text" name="txtusuario" id="txtusuario" class="inputUser" required> 
-                    </div>
-
-                    <div class="card-content-area">
-                        <label for="password">Senha</label>
-                        <input type="password" name="txtsenha" id="txtsenha" class="inputUser" required>
-                    </div>
-                    
-                </div>
-
-                <div class="card-footer">
-                    <input type="submit" value="login" class="submit">
-                    <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
-                </div>
-
-            </form>
-
+            </div>
         </div>
-
+    </div>
     </body>
-
+    <script src="js/boostrap.js"></script>
 </html>
