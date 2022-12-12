@@ -4,7 +4,9 @@ body {
 
     margin: 0;
 
-    background-image: url("img/logo_png.png");
+    position: absolute;
+
+    background-image: url("img/fundo_glitter.png");
 
 }
 
