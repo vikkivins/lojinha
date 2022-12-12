@@ -26,6 +26,8 @@ body {
 
 .card {
 
+    position: center;
+
     background-color: rgba(19, 19, 19, 0.3);
 
     padding: 40px;
