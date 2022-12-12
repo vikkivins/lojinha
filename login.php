@@ -12,19 +12,45 @@
 <body>
     <div class="box">
         <form method="POST" action="action_action.php">
-            <fieldset>
-                <div class="inputBox">
-                    <label for="nome"><b>Usuário</b></label>
-                    <input type="text" name="txtusuario" id="txtusuario" class="inputUser" required>                    
-                </div>
-                <div class="inputBox">
-                    <label for="nome"><b>Senha</b></label>
-                    <input type="password" name="txtsenha" id="txtsenha" class="inputUser" required>                    
-                </div>
+        <body>
 
-                <button type="submit" name="btnlogin" class="btn" id="btnlogin">LOGIN</button>
+<div id="login">
 
-            </fieldset>
+    <form class="card">
+
+        <div class="card-header">
+
+            <h2>Login</h2>
+
+        </div>
+
+        <div class="card-content">
+
+            <div class="card-content-area">
+
+                <label for="usuario">Usuário</label>
+
+                <input type="text" name="txtusuario" id="txtusuario" class="inputUser" required> 
+
+            </div>
+
+            <div class="card-content-area">
+
+                <label for="password">Senha</label>
+
+                <input type="password" name="txtsenha" id="txtsenha" class="inputUser" required>
+
+            </div>
+
+        </div>
+
+        <div class="card-footer">
+
+            <input type="submit" value="login" class="submit">
+
+            <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
+
+        </div>
     </form>
     </div>
       
