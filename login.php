@@ -24,7 +24,7 @@
 
     <body>
 
-    <IMG src="img/logo_png.png" align="right" width="50" height="50">
+    <img src="img/logo_png.png" align="right" width="50" height="50"></img>
 
         <div id="login">
 
